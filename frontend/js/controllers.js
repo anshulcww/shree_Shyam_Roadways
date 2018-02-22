@@ -28,16 +28,17 @@ app
     $scope.saveBookingDetails = function(){
         console.log("user in front end");
         $http({
-            url: "#",
+            url: "/api/getBooking",
             method: "POST",
             data: $scope.user,
             headers: { 'Content-Type': 'application/x-www-form-urlencoded'}
-        }).success(function(data, status, headers, config){
+        }).then(function(data, status, headers, config, response){
             console.log("user from backend");
-            console.log(data);
+            console.log(response.data);
             $state.go('home');
-        }).error(function(data, status, headers, config){
+        },function(data, status, headers, config){
             $state.go('home');
+            console.log("error");
         })
     }
 })

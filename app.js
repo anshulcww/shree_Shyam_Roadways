@@ -27,4 +27,6 @@ app.get("*", function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/api/getUser',model.getUser);
+app.post('/api/getBooking', function(req, res){
+    model.getUser;
+});

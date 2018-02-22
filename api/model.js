@@ -1,6 +1,6 @@
 let model={};
 
-model.getUser=function(req,res) {
+model.getBooking=function(req,res) {
     res.end('done');
 }
 
