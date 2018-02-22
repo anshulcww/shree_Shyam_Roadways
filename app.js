@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var Path = require('path');
 var compression = require('compression');
 const model=require('./api/model.js');
-var port = 8080;
+var port = process.env.PORT||8080;
 
 app.use(compression({ level: 6 }));	//6 is default
 
