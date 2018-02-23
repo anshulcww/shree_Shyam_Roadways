@@ -1,23 +1,30 @@
 <div class="container is-fluid">
 <article class="mw5 mw6-ns center pt4">
     <div class="aspect-ratio aspect-ratio--16x9 mb4">
-        <h1 class="title">Add Booking Details</h1>
-        <hr>
+        <h1 class="title tc">Add Booking Details</h1>
+        <hr />
         
-        <form method="post"  >
-        <div class="field w60">
-            <label class="label">Bill Number:</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Text input" ng-model="user.billNumber">
+        <form method="post">
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Bill Number:</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input" ng-model="user.billNumber">
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <div class="field">
-            <label class="label">Consignor Party:</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Text input" ng-model="user.consignorParty">
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Consignor Party:</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input" ng-model="user.consignrParty">
+                    </div>
+                </div>
             </div>
-        </div>
         <div class="field">
             <label class="label"> GST :</label>
             <div class="control">

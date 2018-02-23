@@ -6,6 +6,11 @@ var Path = require('path');
 var compression = require('compression');
 const model=require('./api/model.js');
 var port = process.env.PORT||8080;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/shreeshyamroadways';
+/* const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://heroku_dn67chxs:root@ds147118.mlab.com:47118/heroku_dn67chxs'; */
+const db = require('./api/dbconfig/db');
+const http_IP = process.env.IP || '192.168.1.8';
+
 
 app.use(compression({ level: 6 }));	//6 is default
 
@@ -18,6 +23,8 @@ app.use(express.static(__dirname));
 // 	console.log('up and running');
 // });
 
+
+
 http.listen(port, "0.0.0.0", function () {
     
     console.log('up and running');
@@ -29,4 +36,15 @@ app.get("*", function (req, res) {
 
 app.post('/api/getBooking', function(req, res){
     model.getUser;
+});
+
+db.connect(MONGODB_URI, (err) => {
+    if (err) {
+        console.log('unable to connect to mongo');
+    }
+    else {
+        app.listen(port);
+        console.log("listening", http_IP, port);
+    }
+    
 });
