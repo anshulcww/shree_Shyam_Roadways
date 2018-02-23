@@ -1,6 +1,6 @@
-<div class="container is-fluid">
-<article class="mw5 mw6-ns center pt4">
-    <div class="aspect-ratio aspect-ratio--16x9 mb4">
+<div class="container is-fluid ">
+<article class="mw5 mw6-ns center ">
+    <div class="aspect-ratio aspect-ratio--16x9 mb4 ">
         <h1 class="title tc">Add Booking Details</h1>
         <hr />
         
@@ -21,94 +21,108 @@
                 </div>
                 <div class="column">
                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input" ng-model="user.consignrParty">
+                        <input class="input" type="text" placeholder="Text input" ng-model="user.consignorParty">
                     </div>
                 </div>
             </div>
-        <div class="field">
-            <label class="label"> GST :</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Text input" ng-model="user.consignorGst">
-            </div>
-        </div>
-        <div class="field">
-            <label class="label">Consignee Party:</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Text input" ng-model="user.consigneeParty">
-            </div>
-        </div>
-        <div class="field">
-            <label class="label"> GST :</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Text input" ng-model="user.consigneeGst">
-            </div>
-        </div>
-        <div class="field">
-            <label class="label">Drop Location :</label>
-            <div class="control">
-                <div class="select">
-                    <select ng-model="user.location">
-                        <option>Makum</option>
-                        <option>Digboi</option>
-                        <option>Digboi</option>
-                        <option>Digboi</option>
-                        <option>Digboi</option>
-                    </select>
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Consignor GST :</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input" ng-model="user.consignorGst">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Weight :</label>
-            <div class="control">
-                <input class="input" type="text" placeholder="Danger input" ng-model="user.weight">
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Consignee Party:</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input" ng-model="user.consigneeParty">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Number of Cartoons :</label>
-            <div class="control">
-                <input class="input" type="tel" placeholder="Danger input" ng-model="user.cartoon">
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Consignee GST:</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input" ng-model="user.consigneeGst">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Rates :</label>
-            <div class="control">
-                <input class="input" type="tel" placeholder="Danger input" ng-model="user.rate">
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Drop Location:</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <div class="select">
+                            <select ng-model="user.location">
+                                <option>Makum</option>
+                                <option>Digboi</option>
+                                <option>Digboi</option>
+                                <option>Digboi</option>
+                                <option>Digboi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Other Charges :</label>
-            <div class="control">
-                <input class="input" type="tel" placeholder="Danger input" ng-model="user.otherCharge">
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Weight :</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Danger input" ng-model="user.weight">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Total Amount :</label>
-            <div class="control">
-                <input class="input" type="tel" placeholder="Danger input" ng-model="user.totalAmount">
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Number of Cartoons :</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="tel" placeholder="Danger input" ng-model="user.cartoon">
+                    </div>
+                </div>
             </div>
-        </div>
-        <label class="label">Image:</label>
-        <div class="file has-name is-fullwidth">
-        
-            <div>
-                <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta">
-                        <span class="file-icon">
-                            <i class="fas fa-upload"></i>
-                        </span>
-                        <span class="file-label">
-                            Choose a file…
-                        </span>
-                    </span>
-                    <span class="file-name">
-                        Screen Shot 2017-07-29 at 15.54.25.png
-                    </span>
-                </label>
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Rates :</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="tel" placeholder="Danger input" ng-model="user.rate">
+                    </div>
+                </div>
             </div>
-        
-        </div>
-        <br>
+            <div class="columns field w60">
+                <div class="column is-one-quarter">
+                    <label class="label">Other Charges:</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="tel" placeholder="Danger input" ng-model="user.otherCharge">
+                    </div>
+                </div>
+            </div>
+            <div class="columns field ">
+                <div class="column is-one-quarter">
+                    <label class="label">Total Amount:</label>
+                </div>
+                <div class="column">
+                    <div class="control">
+                        <input class="input" type="tel" placeholder="Danger input" ng-model="user.totalAmount">
+                    </div>
+                </div>
+            </div>
         <div class="field is-grouped is-grouped-centered">
             <p class="control">
                 <a class="button is-primary" ng-click="saveBookingDetails()">
